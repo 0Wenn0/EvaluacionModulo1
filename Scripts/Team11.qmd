@@ -1,0 +1,19 @@
+---
+title: "Evaluación"
+author: "Equipo 11"
+format: html
+editor: visual
+---
+
+### Script equipo 11
+
+## EDA & Transformations
+
+```{r}
+
+data <- read.csv("https://raw.githubusercontent.com/beduExpert/Programacion-R-Santander-2021/main/Sesion-08/Postwork/match.data.csv")
+class(data)
+
+data$date <- as.Date(data$date)
+str(data)
+```
